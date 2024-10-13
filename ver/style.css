@@ -1,0 +1,232 @@
+:root {
+    --font1: 
+}
+
+* {
+    padding:0;
+    margin:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================== NAV ================================= */
+
+header {
+    background-color: #332E2A;
+    min-height: 120px;
+    min-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+}
+
+header .nav-link {
+
+    display: flex;
+    margin-left: 128px; 
+}
+
+header .nav-link ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link ul li {
+    margin-right: 64px;
+}
+
+.nav-link ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+.nav-link ul li a:hover {
+    color: #D6651E;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+/* ==================== HERO ============================================ */
+
+main {
+    background-color: #332D29;
+    min-height:100vh;
+    background-image: url("rec/hero.JPG");
+    background-size: 1920px 1280px;
+    background-repeat: repeat;
+    box-shadow: 0 3000px rgba(32, 32, 32, 0.5) inset;
+    display: flex;
+}
+
+main .content {
+    max-width: 1522px;
+    margin: 7.5vw 7vw;
+}
+
+main .content h1{
+    font-size: 0.75rem;
+    font-size: clamp(5.5rem, -1.8461538461538463rem + 11.538461538461538vw, 12rem);
+    margin: 64px 0px;
+    color: #FFEBDC;
+    font-family: "Sunflower", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+} 
+
+
+main .content button {
+    margin-top: 64px;
+}
+
+/* ================ BUTTON ===============*/
+.primary {
+    background-color: #D6651E;
+    max-width: 13vw;
+    min-width: 180px;
+    height: 84px;
+    border-radius: 38px;
+    color: #EAE2DC;
+    font-size:2.1875vw;
+    border:0;
+}
+
+.secondary {
+    background-color:#332D29;
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    color:#EAE2DC;
+    font-size:28px;
+    border:0;
+}
+
+/* ========================= ABOUT =====================================================*/
+
+.about {
+    background-color: #EAE2DC;
+    min-height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 122px 0px 0px 0px;
+
+}
+
+.about-image {
+    flex:1; 
+    display: block;
+    max-width: 100%;
+    height:auto;
+    border-radius: 56px;
+    margin: 222px 132px;
+}
+
+.about-text {
+    max-width: 772px;
+    margin: 11.5vw 6.8vw;
+    /* bottom:222px; */
+}
+
+.about-text h3{
+    font-size: clamp(1rem, 0.7403846153846154rem + 1.153846153846154vw, 2.125rem);
+}
+.about-text h1{
+    font-size: clamp(4rem, 2.6153846153846154rem + 6.153846153846154vw, 10rem);
+}
+.about-text p{
+    font-size: clamp(1rem, 0.7403846153846154rem + 1.153846153846154vw, 2.125rem);
+    margin-top:36px;
+}
+
+.about-text .secondary {
+    margin-top: 100px;
+}
+
+
+/* ============================ Menu ================================== */
+
+
+.menu {
+    padding: 0;
+    margin: 0;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #8A4113;
+}
+
+
+.menu-column {
+    align-items: center;
+    margin: 154px 0px;
+}
+
+.title {
+    height: 110px;
+    min-width: 300px;
+    max-width: 448px;
+    background-color: #332D29;
+    color: #EAE2DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    font-family: "Mohave", sans-serif;
+}
+
+.menu-column ul {
+    padding-top: 84px;
+    display: block;
+    text-align: center;
+    list-style: none;
+    font-size: 32px;
+    color: #EAE2DC;
+}
+
+.menu-column ul li {
+    padding-top: 8px;
+}
+
+
+
+/* ============== LOCATION ================= */
+
+.location {
+    /* background-color: #8A4113; */
+    background-color: #EAE2DC;
+    background-image: url("rec/brickwall.png");
+    box-shadow: 0 3000px rgba(32, 32, 32, 0.5) inset;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:620px;
+    
+
+}
+
+.location .content {
+    background-color:rgba(214, 101, 30, .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+    padding: 10vw;
+    
+
+    /* padding: 128px 256px; */
+}
+
+.location .content h1 {
+    font-size: 68px;
+}
+.location .content p {
+    font-size: 24px;
+    text-align: center;
+}
